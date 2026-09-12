@@ -1,48 +1,63 @@
+<div align="center">
+
 # Joshua Gottus
-`Computer Science, Florida Polytechnic University`
 
-Robotics and embedded software. C and C++ on microcontrollers, autonomy on top.
+<samp>robotics and embedded software</samp>
 
-Software Lead on Florida Polytechnic's IEEE Robotics and Automation.
+[jr-cho.com](https://jr-cho.com) &nbsp;·&nbsp;
+[linkedin](https://linkedin.com/in/jr-cho) &nbsp;·&nbsp;
+[github](https://github.com/jr-cho)
 
----
+</div>
 
-## Current Competition
+<img src="./hd-about.svg" width="620" alt="about"/>
 
-**[SECON27](https://github.com/jr-cho/SECON27) — IEEE Stock Car Race**
-Fully autonomous robot for the SoutheastCon 2027 hardware competition. Three laps on a 4x8 ft oval, one pit stop with a tire swap, school flag raised on the final lap. Three minute limit, no external control once the match starts. AprilTags identify the assigned pit spot.
+> C and C++ on microcontrollers, autonomy on top.<br>
+> Small hardware that has to work on the first try.
 
-## Past Competition
+Software Lead on Florida Polytechnic's IEEE SoutheastCon hardware<br>
+team. Computer Science, Florida Polytechnic University.
 
-**[SECON26](https://github.com/jr-cho/SECON26) — Lunar Rescue Mission**
-Autonomous ground robot and micro UAV for SoutheastCon 2026. The ground robot runs embedded C on a Raspberry Pi and drives motors and servos through four antenna tasks. The 250 g UAV runs C firmware on an ESP32, reads antenna LED colors, and transmits them over an IR link to a photodiode ground station.
+<img src="./hd-competition.svg" width="620" alt="competition"/>
 
----
+**[SECON27](https://github.com/jr-cho/SECON27)** &nbsp;·&nbsp; `docs` &nbsp;·&nbsp; <samp>current</samp><br>
+Fully autonomous robot for the SoutheastCon 2027 stock car race.<br>
+Three laps on a 4x8 ft oval, one pit stop to swap tires, a school<br>
+flag raised on the last lap. Three minutes, no external control<br>
+once the match starts. AprilTags mark the assigned pit spot.
 
-## Other Work
+**[SECON26](https://github.com/jr-cho/SECON26)** &nbsp;·&nbsp; `c` `c++` `python`<br>
+Ground robot and micro UAV for the SoutheastCon 2026 lunar rescue.<br>
+The robot runs embedded C on a Raspberry Pi through four antenna<br>
+tasks. The 250 g ESP32 UAV reads their LED colors and sends them<br>
+over an IR link to a photodiode ground station.
 
-| Project                                                                | What it does                                                     |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [PRNTSWRM (work in progress)](https://github.com/jr-cho/PRNTSWRM)      | Dispatches and orchestrates print jobs across a 3D printer fleet |
-| [bump-arena-allocator](https://github.com/jr-cho/bump-arena-allocator) | Bump arena allocator in C                                        |
-| [CV-Color-Tracker](https://github.com/jr-cho/CV-Color-Tracker)         | Color tracking from a camera feed in Python                      |
-| [cman](https://github.com/jr-cho/cman)                                 | C project manager and build orchestrator                         |
+<img src="./hd-projects.svg" width="620" alt="projects"/>
 
----
+**[PRNTSWRM](https://github.com/jr-cho/PRNTSWRM)** &nbsp;·&nbsp; `python` `javascript` `docker`<br>
+Orchestrates print jobs across a mixed 3D printer fleet. Upload a<br>
+sliced file, set a quantity, and a worker hands jobs to whichever<br>
+printers are idle, whether they speak OctoPrint, Bambu, or SDCP.
 
-## Stack
+**[cman](https://github.com/jr-cho/cman)** &nbsp;·&nbsp; `shell`<br>
+C project manager and build orchestrator. Scaffolds a project,<br>
+wires up the build, and drives it from one command instead of a<br>
+pile of CMake invocations you retype every time.
 
-```
-Embedded   C · C++ · ESP32 · Raspberry Pi
-Robotics   motor and servo control · I2C · ArduPilot · PX4 · IR comms · computer vision
-Systems    Linux · CMake · Make · Docker · Git · Podman · Github Runners
-Also       Python · Go · TypeScript · Nix
-Editor     Neovim · tmux
-```
+**[bump-arena-allocator](https://github.com/jr-cho/bump-arena-allocator)** &nbsp;·&nbsp; `c11` `cmake`<br>
+Bump allocator in C11. An allocation is a pointer add and a bounds<br>
+check. It moves one offset forward and never frees a single object.<br>
+Reclaim the whole block at once with `arena_reset`.
 
----
+**[CV-Color-Tracker](https://github.com/jr-cho/CV-Color-Tracker)** &nbsp;·&nbsp; `python`<br>
+Tracks a color in a live camera feed. Built to try out ways of<br>
+reading the LED indicators on the SoutheastCon 2026 antenna tasks<br>
+before that code moved onto the robot.
 
-## Contact
+<img src="./hd-stack.svg" width="620" alt="stack"/>
 
-- Website: [jr-cho.com](https://jr-cho.com)
-- LinkedIn: [linkedin.com/in/jr-cho](https://linkedin.com/in/jr-cho)
+<samp>embedded &nbsp; c &nbsp; c++ &nbsp; esp32 &nbsp; raspberry pi</samp><br>
+<samp>robotics &nbsp; motor and servo control &nbsp; i2c &nbsp; ardupilot &nbsp; px4 &nbsp; ir comms &nbsp; computer vision</samp><br>
+<samp>systems &nbsp; linux &nbsp; cmake &nbsp; make &nbsp; docker &nbsp; podman &nbsp; git &nbsp; github runners</samp><br>
+<samp>also &nbsp; python &nbsp; go &nbsp; typescript &nbsp; nix</samp><br>
+<samp>editor &nbsp; neovim &nbsp; tmux</samp>
