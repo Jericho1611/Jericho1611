@@ -32,6 +32,25 @@ The robot runs embedded C on a Raspberry Pi through four antenna<br>
 tasks. The 250 g ESP32 UAV reads their LED colors and sends them<br>
 over an IR link to a photodiode ground station.
 
+<details>
+<summary><samp>system diagram</samp></summary>
+
+```mermaid
+flowchart TD
+  A["ground robot<br>raspberry pi · embedded C"]
+  B["four antenna tasks"]
+  C["antenna LEDs"]
+  D["micro UAV<br>250 g · ESP32"]
+  E["photodiode<br>ground station"]
+
+  A -->|motors and servos| B
+  B --> C
+  C -->|color read| D
+  D -->|IR link| E
+```
+
+</details>
+
 <img src="./hd-projects.svg" width="620" alt="projects"/>
 
 **[PRNTSWRM](https://github.com/jr-cho/PRNTSWRM)** &nbsp;·&nbsp; `python` `javascript` `docker`<br>
@@ -44,6 +63,11 @@ C project manager and build orchestrator. Scaffolds a project,<br>
 wires up the build, and drives it from one command instead of a<br>
 pile of CMake invocations you retype every time.
 
+<details>
+<summary><samp>two smaller ones</samp></summary>
+
+<br>
+
 **[bump-arena-allocator](https://github.com/jr-cho/bump-arena-allocator)** &nbsp;·&nbsp; `c11` `cmake`<br>
 Bump allocator in C11. An allocation is a pointer add and a bounds<br>
 check. It moves one offset forward and never frees a single object.<br>
@@ -53,6 +77,8 @@ Reclaim the whole block at once with `arena_reset`.
 Tracks a color in a live camera feed. Built to try out ways of<br>
 reading the LED indicators on the SoutheastCon 2026 antenna tasks<br>
 before that code moved onto the robot.
+
+</details>
 
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
